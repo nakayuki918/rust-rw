@@ -10,7 +10,7 @@ async fn main() -> Result<(), sqlx::Error> {
         .fetch_one(&pool)
         .await?;
 
-    println!("connected database": {}", row.0);
+    println!("connected database successfully: {}", row.0);
 
     Ok(())
 }
